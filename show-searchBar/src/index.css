@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  background: lightgray;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 4px;
+  margin-top: 2rem;
+  color: orangered;
+}
+
+.search-container {
+  width: 80vw;
+  max-width: 400px;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  transition: all 0, 3s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  animation-name: rotate;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  to {
+    transform: scale(1.5) rotate(360deg);
+  }
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-transform: capitalize;
+}
